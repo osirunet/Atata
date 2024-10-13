@@ -1,0 +1,77 @@
+/* Importa una fuente de Google Fonts llamada 'Nunito' en negrita (700) */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap'); 
+
+/* Estilo global para todos los elementos, elimina márgenes y rellenos, y aplica la fuente 'Nunito' */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito';
+}
+
+/* Estilo del cuerpo de la página */
+body{
+	color: #3b20ed; /* Color del texto en el cuerpo de la página */
+	text-align: center; /* Centra el texto horizontalmente */
+	background: url("../img/panda.png"); /* Imagen de fondo del cuerpo */
+	background-size: 130%, 100%; /* Tamaño del fondo, ancho al 130% y alto al 100% */
+}
+
+img{
+    width: 160px;   /* Ancho de la imagen */
+    height: auto;   /* Altura ajustada automáticamente para mantener la proporción */
+    max-width: 100%; /* Se asegura de que no exceda el ancho del contenedor */
+}
+.reglas {
+    width: 65%; /* Ocupa el 80% de la pantalla */
+    margin: 0 auto; /* Centra el div horizontalmente */
+    text-align: justify; /* Justifica el texto */
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en una columna */
+    align-items: center; /* Centra el contenido en el eje horizontal */
+    font-size: 18px;
+}
+
+.reglas h1, .reglas h2, .reglas p, .reglas ul {
+    width: 100%; /* Asegura que los elementos hijos ocupen el 100% del ancho del div */
+    text-align: justify; /* Justifica el texto de cada elemento */
+}
+
+#mover{
+    text-align: center;
+    color:red;
+}
+ul{
+    margin-left: 100px;
+}
+.contenedor {
+    display: flex;               /* Activa Flexbox para el contenedor */
+    justify-content: center;     /* Centra horizontalmente las secciones */
+    align-items: center;         /* Centra verticalmente las secciones */
+    height: 21vh;              /* Ajusta la altura del contenedor al 100% de la ventana */
+    gap: 20px;                  /* Espacio entre las secciones (ajusta según sea necesario) */
+}
+
+section {               /* Activa Flexbox para el contenedor */
+    justify-content: center;     /* Opcional: agrega un borde para visualizar las secciones */
+    padding: 15px;             /* Opcional: agrega espacio interno a las secciones */
+    text-align: center;         /* Centra el texto dentro de cada sección */
+    width: 190px;               /* Opcional: establece un ancho fijo para las secciones */
+}
+.button {
+	width: 100px; /* Ancho de 120px */
+	height: 28px; /* Altura de 28px */
+	border-radius: 8px; /* Bordes redondeados con un radio de 8px */
+	background-color:rgb(241, 198, 117); /* Color de fondo */
+	display: inline-block; /* Hace que el botón se alinee en la misma línea con otros elementos */
+	margin-right: 0px; /* Espaciado a la derecha de 20px */
+	margin-top: 10px; /* Espaciado en la parte superior de 4px */
+    padding: auto;
+}
+
+
+#color{
+    color:rgb(234, 14, 205);
+}
+.button:hover{
+	background-color: #a9ea5e; /* Cambia el color de fondo a negro cuando el ratón está sobre él */
+}

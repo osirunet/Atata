@@ -1,0 +1,173 @@
+/* Importa una fuente de Google Fonts llamada 'Nunito' en negrita (700) */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap'); 
+
+/* Estilo global para todos los elementos, elimina márgenes y rellenos, y aplica la fuente 'Nunito' */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito';
+}
+
+/* Estilo del cuerpo de la página */
+body{
+	color: #FA45FA; /* Color del texto en el cuerpo de la página */
+	text-align: center; /* Centra el texto horizontalmente */
+	background: url("../img/panda.png"); /* Imagen de fondo del cuerpo */
+	background-size: 130%, 100%; /* Tamaño del fondo, ancho al 130% y alto al 100% */
+}
+
+/* Estilo para los títulos <h1> */
+h1{
+	color: rgb(18, 201, 94); /* Color del texto del título */
+	padding: 30px; /* Espaciado interno alrededor del título */
+}
+
+/* Estilo para un contenedor con la clase 'container' */
+.container{
+	background-color: #D9E3E7; /* Color de fondo */
+	max-width: 550px; /* Ancho máximo del contenedor */
+	height: 220px; /* Altura fija del contenedor */
+	margin: auto; /* Centra el contenedor horizontalmente */
+	border: 2px solid #000; /* Borde sólido de 2px de color negro */
+	border-radius: 40px; /* Bordes redondeados con un radio de 40px */
+	display: flex; /* Establece un diseño flexible */
+	padding: 50px 0; /* Espaciado interno vertical de 50px */
+}
+
+/* Estilo para el elemento con la clase 'izquierdo' */
+.izquierdo{
+	width: 70%; /* Ocupa el 70% del ancho del contenedor */
+	font-size: 70px; /* Tamaño grande del texto */
+	display: flex; /* Establece un diseño flexible */
+	flex-direction: column; /* Coloca los elementos en una columna */
+	justify-content: center; /* Centra los elementos verticalmente */
+	align-items: center; /* Centra los elementos horizontalmente */
+}
+
+/* Estilo para el elemento con la clase 'derecha' */
+.derecha{
+	display: flex; /* Establece un diseño flexible */
+	flex-direction: column; /* Coloca los elementos en una columna */
+	justify-content: center; /* Centra los elementos verticalmente */
+	text-align: right; /* Alinea el texto a la derecha */
+}
+
+/* Estilo para el elemento con la clase 'msj' */
+.msj{
+	font-size: 30px; /* Tamaño del texto */
+	height: 40px; /* Altura fija */
+}
+
+/* Estilo para el elemento con la clase 'opcion' */
+.opcion{
+	width: 70px; /* Ancho de 70px */
+	height: 150px; /* Altura de 150px */
+	border: 1px solid #000; /* Borde sólido de 1px de color negro */
+	font-size: 35px; /* Tamaño del texto */
+	margin-bottom: 20px; /* Espaciado inferior de 20px */
+	border-radius: 100%; /* Bordes completamente redondeados */
+	cursor: pointer; /* Cambia el cursor a pointer cuando se pasa por encima */
+	background-color: #FCC6F2; /* Color de fondo */
+	color: #FB04FA; /* Color del texto */
+	display: flex; /* Establece un diseño flexible */
+	justify-content: center; /* Centra el contenido horizontalmente */
+	align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* Efecto hover (al pasar el cursor) para el elemento con la clase 'opcion' */
+.opcion:hover{
+	background-color: #000; /* Cambia el color de fondo a negro cuando el ratón está sobre él */
+}
+
+/* Estilo para el elemento con la clase 'button' */
+.button {
+	width: 120px; /* Ancho de 120px */
+	height: 28px; /* Altura de 28px */
+	border-radius: 8px; /* Bordes redondeados con un radio de 8px */
+	background-color: #FCC6F2; /* Color de fondo */
+	display: inline-block; /* Hace que el botón se alinee en la misma línea con otros elementos */
+	margin-right: 20px; /* Espaciado a la derecha de 20px */
+	margin-top: 4px; /* Espaciado en la parte superior de 4px */
+}
+
+/* Esconde el elemento con el id 'sonido' */
+#sonido{
+	display: none; /* No se muestra en pantalla */
+}
+
+/* Estilo para el elemento con la clase 'emogi' */
+.emogi {
+	padding: 50px; /* Espaciado interno de 50px */
+	display: flex; /* Establece un diseño flexible */
+	justify-content: center; /* Centra el contenido horizontalmente */
+	align-items: center; /* Centra el contenido verticalmente */
+	height: 10vh; /* Altura del 10% de la ventana */
+}
+
+/* Estilo para los elementos con los ids 'emogi1', 'emogi2', y 'emogi3' */
+#emogi1,#emogi2,#emogi3{
+	width: 300px; /* Ancho de 200px */
+	height: auto; /* Altura ajustable automáticamente */
+	font-size: 30px; /* Tamaño del texto */
+	text-align: center, justify; /* Alineación centrada */
+}
+
+/* Estilo para los títulos <h2> */
+h2{
+	font-size: 3rem; /* Tamaño de texto de 3 rem */
+	color: #075224; /* Color del texto */
+}
+
+/* Ajuste adicional para los títulos <h1> */
+h1 {
+	font-size: 4rem; /* Tamaño de texto de 4 rem */
+    margin: 0; /* Sin márgenes */
+    /* Ajuste de tamaño no necesario (parece un comentario sin uso práctico) */
+}
+
+/* Estilo para el contenedor con la clase 'control' */
+.control{
+	display: flex; /* Establece un diseño flexible */
+	justify-content: center; /* Centra el contenido horizontalmente */
+	align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* Estilo para los elementos con los ids 'intentos-display', 'timer-display', 'score-display', y 'monedas' */
+#intentos-display,#timer-display,#score-display,#monedas{
+	padding: 15px; /* Espaciado interno de 15px */
+	font-size: 25px; /* Tamaño del texto */
+	color: blue; /* Color del texto azul */
+}
+
+/* Estilo para las imágenes */
+img{
+	width: 29px; /* Ancho fijo de 29px */
+	height: auto; /* Altura ajustable automáticamente */
+	padding-right: 10px; /* Espaciado a la derecha de 10px */
+}
+
+/* Estilo para el botón con el id 'start-button' */
+#start-button{
+	width: 80px; /* Ancho de 80px */
+	height: 30px; /* Altura de 30px */
+	background-color: red; /* Color de fondo rojo */
+	display: inline-block; /* Alinea el botón horizontalmente */
+	margin-right: 10px; /* Espaciado a la derecha de 10px */
+	margin-top: 5px; /* Espaciado superior de 5px */
+	border-radius: 10px; /* Bordes redondeados con un radio de 10px */
+	font-size: 22px; /* Tamaño del texto */
+	color: white; /* Color del texto blanco */
+}
+
+/* Estilo para el selector de intentos con el id 'intentos-select' */
+#intentos-select{
+	width: 140px; /* Ancho de 140px */
+	height: 30px; /* Altura de 30px */
+	background-color: rgb(0, 255, 98); /* Color de fondo verde brillante */
+	display: inline-block; /* Alinea el elemento horizontalmente */
+	margin-right: 10px; /* Espaciado a la derecha de 10px */
+	margin-top: 5px; /* Espaciado superior de 5px */
+	border-radius: 10px; /* Bordes redondeados con un radio de 10px */
+	font-size: 22px; /* Tamaño del texto */
+	color: rgb(53, 62, 233); /* Color del texto azul oscuro */
+}

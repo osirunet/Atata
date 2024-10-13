@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos y enlaces a recursos externos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.ico" type="image/x-icon" id="icono">
+    <title>ATATÁ</title>
+    <!-- Enlace al archivo CSS externo para los estilos -->
+    <link rel="stylesheet" href="css/divi3.css">
+</head>
+<body>
+    <!-- Contenedor para los botones de navegación -->
+    <div class="botones">
+        <!-- Botón para regresar al menú principal -->
+        <a href="index.html"><button class="button">MENÚ</button></a>
+        <!-- Botón para ir a la página de resta -->
+        <a href="divi.html"><button class="button">NIVEL 1</button></a>
+        <!-- Botón para ir a la página de multiplicación -->
+        <a href="divi3.html"><button class="button">NIVEL 3</button></a>
+        <!-- Espacio para agregar más botones de operaciones en el futuro -->
+        <!-- agregar más botones aquí -->
+    </div>
+
+    <!-- Título del juego de suma -->
+    <h2>PRACTIQUEMOS LA DIVISIÓN</h2>
+
+    <!-- Menú desplegable para seleccionar la cantidad de intentos -->
+    <select id="intentos-select">
+        <option value="10">10 intentos</option>
+        <option value="20">20 intentos</option>
+        <option value="30">30 intentos</option>
+    </select>
+    
+    <!-- Botón para iniciar el juego -->
+    <button id="start-button">Iniciar</button>
+    
+    <!-- Sección que muestra información de control del juego -->
+    <div class="control">
+        <!-- Muestra los intentos restantes -->
+        <p id="intentos-display">Intentos restantes: 0</p>
+        <!-- Muestra el tiempo transcurrido durante el juego -->
+        <p id="timer-display">Tiempo: 0 segundos</p>
+        <!-- Muestra los aciertos y errores durante el juego -->
+        <p id="score-display">Aciertos: 0, Errores: 0</p>
+        <!-- Muestra la cantidad de monedas ganadas por aciertos -->
+        <div id="monedas">
+            🏆 Recompenzas: <span id="monedas-display">0</span>
+        </div>
+    </div>
+    
+    <!-- Contenedor para la operación y las opciones de respuesta -->
+    <div class="container">
+        <!-- Sección izquierda que contiene la operación matemática -->
+        <div class="izquierdo">
+            <!-- Contenedor que muestra la operación actual -->
+            <div class="container-operacion">
+                <!-- Muestra la operación matemática a resolver -->
+                <span id="suma">0 ÷ 0 =</span>
+                <!-- Muestra el resultado actual de la operación -->
+                <span class="resultado" id="resultado"> 0</span>
+            </div>
+            <!-- Espacio para mostrar mensajes (como respuestas correctas o incorrectas) -->
+            <span class="msj" id="msj"></span>
+        </div>
+
+        <!-- Sección derecha que contiene las opciones de respuesta -->
+        <div class="derecha">
+            <!-- Opción de respuesta 1, que al hacer clic llama a la función 'controlarRespuesta' -->
+            <span id="op1" class="opcion" onclick="controlarRespuesta(this)">0</span>
+            <!-- Opción de respuesta 2 -->
+            <span id="op2" class="opcion" onclick="controlarRespuesta(this)">0</span>
+            <!-- Opción de respuesta 3 -->
+            <span id="op3" class="opcion" onclick="controlarRespuesta(this)">0</span>
+        </div>
+    </div>
+
+    <!-- Contenedor para mostrar la operación y el resultado en emojis en la misma fila -->
+    <div class="emogis">
+        <!-- Área donde se visualizará la operación y el resultado en emojis -->
+        <div id="emoji-operacion-resultado" style="text-align: center; font-size: 3em;"></div>
+    </div>
+
+
+    <!-- Sección de audio con un reproductor para agregar sonidos al juego -->
+    <section>
+        <audio src="audio/audi.mp3" controls id="sonido"></audio>
+    </section>
+
+    <!-- Enlace al archivo JavaScript externo que contiene la lógica del juego -->
+    <script src="js/divi3.js"></script>
+</body>
+</html>
